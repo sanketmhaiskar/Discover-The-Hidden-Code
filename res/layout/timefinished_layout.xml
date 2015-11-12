@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:padding="15dp"
+    tools:context=".PuzzleResult" >
+
+    <TextView
+        android:id="@+id/txtGameDifficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtGameResults"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dip"
+        android:text="@string/hello_world"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtGameResults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dip"
+        android:text="@string/text_gameresults"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/color_red"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtTimeLimit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtGameDifficulty"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dip"
+        android:text="@string/hello_world"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtYourScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTimeLimit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dip"
+        android:text="@string/hello_world"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dip"
+        android:layout_below="@+id/txtYourScore"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/btnGameResult_OK"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="40dip"
+            android:layout_marginRight="40dip"
+            android:background="@drawable/gamesettings_buttons_backgroundselector_2"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/btntext_OK"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:padding="15dp"
+    tools:context=".PuzzleResult" >
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dip"
+        android:text="@string/hello_world"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/color_red" />
+
+    <TextView
+        android:id="@+id/txtResultStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtResult"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dip"
+        android:text="@string/hello_world"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtResultStatus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dip" >
+
+        <ImageView
+            android:id="@+id/correctanswer_letter1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:src="@drawable/letters1_1" />
+
+        <ImageView
+            android:id="@+id/correctanswer_letter2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:src="@drawable/letters1_1" />
+
+        <ImageView
+            android:id="@+id/correctanswer_letter3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:src="@drawable/letters1_1" />
+
+        <ImageView
+            android:id="@+id/correctanswer_letter4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:src="@drawable/letters1_1" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtPointStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dip"
+        android:text="@string/hello_world"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dip"
+        android:layout_alignLeft="@+id/txtResult"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtPointStatus"
+        android:layout_marginTop="20dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/btnPuzzleResult_OK"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="40dip"
+            android:layout_marginRight="40dip"
+            android:background="@drawable/gamesettings_buttons_backgroundselector_2"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="OK"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+</RelativeLayout>

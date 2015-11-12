@@ -1,0 +1,239 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:padding="15dp" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/title_settings"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="italic"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textView1"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/gamesettings_subheading"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textView3"
+                android:background="@drawable/gamesettings_buttonshape" >
+
+                <TextView
+                    android:id="@+id/btnEasy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/gamesettings_buttons_backgroundselector"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/text_easy"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@drawable/gamesettings_buttons_textselector" />
+
+                <TextView
+                    android:id="@+id/btnDifficult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.42"
+                    android:background="@drawable/gamesettings_buttons_backgroundselector"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/text_difficult"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@drawable/gamesettings_buttons_textselector" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/linearLayout1"
+                android:layout_marginTop="20dip"
+                android:text="@string/title_timelimit"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textView4"
+                android:background="@drawable/gamesettings_buttonshape" >
+
+                <TextView
+                    android:id="@+id/btn5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/gamesettings_buttons_backgroundselector"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text=" 5"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@drawable/gamesettings_buttons_textselector" />
+
+                <TextView
+                    android:id="@+id/btn10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/gamesettings_buttons_backgroundselector"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="10"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@drawable/gamesettings_buttons_textselector" />
+
+                <TextView
+                    android:id="@+id/btn15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/gamesettings_buttons_backgroundselector"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="15"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@drawable/gamesettings_buttons_textselector" />
+
+                <TextView
+                    android:id="@+id/btnInfinity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/gamesettings_buttons_backgroundselector"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/infinity"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@drawable/gamesettings_buttons_textselector" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_below="@+id/textView2"
+                android:layout_marginTop="23dip"
+                android:text="@string/title_puzzledifficulty"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/linearLayout2"
+                android:layout_below="@+id/linearLayout2"
+                android:layout_marginTop="20dip"
+                android:text="@string/title_puzzlepieces"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/LinLayPuzzlePieces"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/TextView01"
+                android:background="@drawable/gamesettings_buttonshape" >
+
+                <TextView
+                    android:id="@+id/btnLetter1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:background="@drawable/gamesettings_buttons_backgroundselector"
+                    android:clickable="true"
+                    android:drawableTop="@drawable/letters1_1" />
+
+                <TextView
+                    android:id="@+id/btnLetter2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:background="@drawable/gamesettings_buttons_backgroundselector"
+                    android:clickable="true"
+                    android:drawableTop="@drawable/letters2_1" />
+
+                <TextView
+                    android:id="@+id/btnThumbpin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.34"
+                    android:background="@drawable/gamesettings_buttons_backgroundselector"
+                    android:clickable="true"
+                    android:drawableTop="@drawable/thumb_2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="64dip"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/LinLayPuzzlePieces"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/gamesettings_buttonshape_2" >
+
+                <Button
+                    android:id="@+id/btnBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/gamesettings_buttons_backgroundselector_2"
+                    android:gravity="center"
+                    android:text="@string/btntext_back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.50" />
+
+                <Button
+                    android:id="@+id/btnStart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/gamesettings_buttons_backgroundselector_2"
+                    android:gravity="center"
+                    android:text="@string/btntext_start" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Discover The Hidden Code</string>
+    <string name="action_settings">Settings</string>
+    <string name="gamesettings_subheading">Solve as many puzzles as you can within the time limit.A point will be deducted for every unsolved puzzle.</string>
+    <string name="title_activity_gamer_result">GamerResult</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="infinity">∞</string>
+    <string name="title_Discover">DISCOVER</string>
+    <string name="title_hiddencode">THE HIDDEN CODE</string>
+    <string name="title_settings">Game Settings</string>
+    <string name="title_puzzledifficulty">Puzzle Difficulty</string>
+    <string name="title_timelimit">Time Limit (minutes)</string>
+    <string name="title_puzzlepieces">Puzzle Pieces</string>
+    <string name="btntext_learntoplay">LEARN TO PLAY</string>
+    <string name="btntext_startnow">START NOW</string>
+    <string name="footer_developedby">Developed by Tan Kin Lian And Associates</string>
+    <string name="text_time">Time:  </string>
+    <string name="text_points">Points: </string>  
+    <string name="text_difficult">Difficult</string>
+    <string name="text_easy">Easy</string>
+    <string name="text_defaultclues">rrrr</string>
+    <string name="text_gameresults">Game Results</string>
+    <string name="btntext_mainmenu">Main Menu</string>
+    <string name="btntext_back">Back</string>
+    <string name="btntext_start">Start</string>
+	<string name="btntext_check">Check</string>
+	<string name="btntext_giveup">Give Up</string>
+	<string name="btntext_next">Next</string>
+	<string name="btntext_OK">OK</string>
+</resources>
